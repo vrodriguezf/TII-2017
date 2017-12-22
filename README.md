@@ -36,5 +36,13 @@ An example of a datalog file can be found at `resources/datalogs/STANAG_4586_log
 
 ### Run configuration GUI
 
-This is the main file inherited from the PetriNet Simulator [PetriNetSim](https://github.com/zamzam/PetriNetSim).
+This is the main file inherited from the PetriNet Simulator [PetriNetSim](https://github.com/zamzam/PetriNetSim). 
+Click the "Open" button and select the file `resources/WFNetOP/TII_EBO.pnml` to load the WF-Net-based OP used in the 
+article. 
 
+Select a transition, right click on it and go to the tab "APFE" in order to see how the guard condition associated to 
+that transition is implemented.
+
+## Contact
+
+For any questions about the use of the code or the creation of new WF-Net based Operating Procedures, please contact me by email or add a new issue in this repository.
