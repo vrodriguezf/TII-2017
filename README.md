@@ -32,7 +32,7 @@ Two arguments are used in this run cofiguration. You can edit them in Project Pr
 An example of a datalog file can be found at `resources/datalogs/STANAG_4586_log_formatted.xlsx`
 
 2. Path of the JSON file containing the information of the OP to use. See an example of this information file in
-``resources/OPInfo/TII_ENGINE_BAY_OVERHEATING.json`
+`resources/OPInfo/TII_ENGINE_BAY_OVERHEATING.json`
 
 
 
