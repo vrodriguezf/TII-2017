@@ -1,0 +1,62 @@
+{
+    "_id" : "TII_ENGINE_BAY_OVERHEATING",
+    "name" : "TII ENGINE BAY OVERHEATING",
+    "type" : "CAUTION",
+    "description" : "Temperature inside engine bay is over the equipment operative limit (70º C). Risk of damage or loss of equipment in engine bay.",
+    "proceduralSteps" : [
+        {
+            "name" : "In Main Control Panel, check:",
+            "label" : "",
+            "type" : "CONCURRENT_CONTAINER",
+            "steps" : [ 
+                {
+                    "name" : "Engine Temperature Panel is high-yellow",
+                    "label" : "CHECK:S1.1",
+                    "type" : "CHECK"
+                }, 
+                {
+                    "name" : "Engine Temperature is over 70ºC",
+                    "label" : "CHECK:S_1.2",
+                    "type" : "CHECK"
+                }
+            ]
+        }, 
+        {
+            "name" : "Modify UAV altitude by using ALTITUDE command",
+            "label" : "ACTION:S_2",
+            "type" : "ACTION",
+            "maximumStepDuration" : 30000
+        }, 
+        {
+            "name" : "Supervise that EBO caution disappears from the alert panel",
+            "label" : "SUPERVISION:S_3",
+            "type" : "SUPERVISION",
+            "maximumStepDuration" : 300000
+        }, 
+        {
+            "name" : "If ENG BAY OVERTEMP caution persists:",
+            "label" : "",
+            "type" : "SEQUENTIAL_CONTAINER",
+            "steps" : [ 
+                {
+                    "name" : "Command GO-WP to waypoint IAF",
+                    "label" : "ACTION:S_4.1",
+                    "type" : "ACTION",
+                    "maximumStepDuration" : 10000
+                }, 
+                {
+                    "name" : "Command LANDING",
+                    "label" : "ACTION:S_4.1",
+                    "type" : "ACTION",
+                    "maximumStepDuration" : 15000
+                }
+            ]
+        }, 
+        {
+            "name" : "If ENG BAY OVERTEMP caution disappears, resume mission by changing the control mode to AUTOMATIC",
+            "label" : "ACTION:S_5",
+            "type" : "ACTION",
+            "maximumStepDuration" : 50000
+        }
+    ]
+}
