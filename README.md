@@ -2,10 +2,10 @@
 
 This is the code associated to the article: 
 
-V. Rodríguez-Fernández, A. Gonzalez-Pardo, and D. Camacho, “Automatic Procedure Following Evaluation using Petri Net-based Workflows,” IEEE Trans. Ind. Informatics, vol. In press, 2017.
+V. Rodríguez-Fernández, A. Gonzalez-Pardo and D. Camacho, "Automatic Procedure Following Evaluation Using Petri Net-Based Workflows," in IEEE Transactions on Industrial Informatics, vol. 14, no. 6, pp. 2748-2759, June 2018, doi: 10.1109/TII.2017.2779177.
+keywords: {Petri nets;Informatics;Data models;Analytical models;Mathematical model;Image color analysis;Checklist;conformance checking;operating procedure (OP);Petri Net (PN);procedure following evaluation (PFE);workflow},
 
-You can find a link to the article here:
-[TBD]
+You can find a link to the article [here](https://ieeexplore.ieee.org/document/81257169).
 
 ## Requirements
 
